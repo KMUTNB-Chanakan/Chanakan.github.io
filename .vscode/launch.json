@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "k:\\Code\\Chanakan.github.io\\index.html"
+            "name": "Open A_index.html",
+            "file": "k:\\Code\\Chanakan.github.io\\A_index.html"
         }
     ]
 }
