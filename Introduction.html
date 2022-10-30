@@ -36,7 +36,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Content -->
+						<!-- Programmer -->
 							<section id="Programmer" class="main">
 								<h1>Programmer</h1>
 								<sub><b><a href="https://creazilla.com/nodes/79238-programing-clipart">creazilla.com</a></b></sub>
@@ -84,6 +84,7 @@
 									express computations.
 								</blockquote>
 							</section>
+						<!--Python-->
 							<section id="Python" class="main">
 								<h1>Python</h1>
 								<span class="image main"><img src="./insert_images/Python_logo.png" alt="" /></span>
@@ -103,7 +104,7 @@
 								line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the
 								other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast
 								edit-test-debug cycle makes this simple approach very effective.</p>
-								<p>See also some <b><a href="#">comparisons</a></b> between Python and other languages.<sub><b><a href="https://www.python.org/doc/essays/blurb/">python.org</a></b></sub></p>
+								<p>See also some <b><a href="#Whypython" class="active">comparisons</a></b> between Python and other languages.<sub><b><a href="https://www.python.org/doc/essays/blurb/">python.org</a></b></sub></p>
 
 								<h2><b>History of Python</b></h2>
 								<p>Python is a widely-used general-purpose, high-level programming language. It was initially designed by <b><a href="https://en.wikipedia.org/wiki/Guido_van_Rossum">Guido van Rossum</a></b>
@@ -144,8 +145,10 @@
 								<p>Python has been an inspiration for many other coding languages such as Ruby, Cobra, Boo, CoffeeScript ECMAScript,
 								Groovy, Swift Go, OCaml, Julia, etc.<sub><b><a href="https://www.geeksforgeeks.org/history-of-python/">geeksforgeeks.org</a></b></sub></p>
 							</section>
+						<!---Whypython-->
 							<section id="Whypython" class="main">
 							<h1>Why Python</h1>
+							
 							<h2><b>Comparing Python To Other Languages</b></h2>
 							<p><b>Disclaimer</b> : This essay was written sometime in 1997. It shows its age. <br/>It is retained here merely as a historical
 							artifact. -- <b><a href="https://en.wikipedia.org/wiki/Guido_van_Rossum">Guido van Rossum</a></b></p>
@@ -154,7 +157,8 @@
 							languages. These comparisons concentrate on language issues only. In practice, the choice of a programming language is
 							often dictated by other real-world constraints such as cost, availability, training, and prior investment, or even
 							emotional attachment. Since these aspects are highly variable, it seems a waste of time to consider them much for this
-							comparison.</p>
+							comparison.<sub><b><a href="https://www.python.org/doc/essays/comparisons/">python.org</a></b></sub></p>
+							<pre><code>print('Hello world!')</code></pre>
 							<h3>Java</h3>
 								<blockquote>
 									<p>Python programs are generally expected to run slower than Java programs, but they also take much less time to
@@ -182,6 +186,13 @@
 										under development, which allows calling Python code from Java and vice versa. In this implementation, Python source
 										code
 										is translated to Java bytecode (with help from a run-time library to support Python's dynamic semantics).</p>
+									<pre><code>public class HelloWord
+ {
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World!");
+	}
+ } </code></pre>
 								</blockquote>
 							<h3>Javascript</h3>
 								<blockquote>
@@ -191,6 +202,7 @@
 										JavaScript, that's all there is. Python, on the other hand, supports writing much larger programs and better code
 										reuse
 										through a true object-oriented programming style, where classes and inheritance play an important role.</p>
+									<pre><code>console.log('Hello World!)</code></pre>
 								</blockquote>
 							<h3>Perl</h3>
 								<blockquote>
@@ -206,23 +218,47 @@
 										Python comes close to Perl but rarely beats it in its original application domain; however Python has an
 										applicability
 										well beyond Perl's niche.</p>
+									<pre><code>print('Hello World!');</code></pre>
 								</blockquote>
-							<h3>Tcl</h3>
+							<h3>C++</h3>
 								<blockquote>
-									<p>Like Python, Tcl is usable as an application extension language, as well as a stand-alone programming language.
-										However,
-										Tcl, which traditionally stores all data as strings, is weak on data structures, and executes typical code much
-										slower
-										than Python. Tcl also lacks features needed for writing large programs, such as modular namespaces. Thus, while a
-										"typical" large application using Tcl usually contains Tcl extensions written in C or C++ that are specific to that
-										application, an equivalent Python application can often be written in "pure Python". Of course, pure Python
-										development
-										is much quicker than having to write and debug a C or C++ component. It has been said that Tcl's one redeeming
-										quality
-										is the Tk toolkit. Python has adopted an interface to Tk as its standard GUI component library.</p>
-									<p>Tcl 8.0 addresses the speed issuse by providing a bytecode compiler with limited data type support, and adds namespaces.
-										However, it is still a much more cumbersome programming language.</p>
+									<p>Almost everything said for Java also applies for C++, just more so: where Python code is typically 3-5 times shorter
+									than equivalent Java code, it is often 5-10 times shorter than equivalent C++ code! Anecdotal evidence suggests that one
+									Python programmer can finish in two months what two C++ programmers can't complete in a year. Python shines as a glue
+									language, used to combine components written in C++.</p>
+									<pre><code>#include < iostream >
+using namespace std;
+int main()
+{
+	cout << "hello World!";
+
+	return 0;
+}</code></pre>
+								
 								</blockquote>
+							<h3>Common Lisp and Scheme</h3>
+								<blockquote>
+									<P>These languages are close to Python in their dynamic semantics, but so different in their approach to syntax that a
+									comparison becomes almost a religious argument: is Lisp's lack of syntax an advantage or a disadvantage? It should be
+									noted that Python has introspective capabilities similar to those of Lisp, and Python programs can construct and execute
+									program fragments on the fly. Usually, real-world properties are decisive: Common Lisp is big (in every sense), and the
+									Scheme world is fragmented between many incompatible versions, where Python has a single, free, compact implementation.</P>
+								</blockquote>
+							
+							<h2><b>Most Popular Programming, Scripting, And Aarkup Languages</b></h2>
+								<sub><b><a href="https://survey.stackoverflow.co/2022/#most-popular-technologies-language-prof">survey.stackoverflow.co</a></b></sub>
+								<span class="image main"><img src="./insert_images/Most-Popular Programming,Scripting,And-Aarkup-Languages.png" alt=""></span>
+							<h2><b>Ratings Programming Languages</b></h2>
+								<sub><b><a href="https://www.tiobe.com/tiobe-index/">tiobe.com</a></b></sub>
+								<span class="image main"><img src="./insert_images/rating-programming-languages-2022.png" alt=""></span>
+							
+							
+							
+
+
+
+
+
 
 							</section>
 
