@@ -38,26 +38,163 @@
         </header>
         <nav id="nav">
             <ul>
-                <li><a href="#Programmer" class="active">Programmer</a></li>
+                <li><a href="#Python_Operators" class="active">Python Operators</a></li>
+                <li><a href="#Arithmetic_operators" class="active">Arithmetic operators</a></li>
+                <li><a href="#Operator_Precedence" class="active">Operator Precedence</a></li>
                 <li><a href="index.html" class="active">Home Page</a></li>
             </ul>
         </nav>
 
         <!-- Main -->
         <div id="main">
-            <section id="" class="main">
+            <section id="Python_Operators" class="main">
                 <h1>Python Operators</h1>
                 <h2><b>What are operators in python?</b></h2>
                 <P>Operators are special symbols in Python that carry out arithmetic or logical computation. The value
                     that the operator operates on is called the operand.</P>
                 <h2><b>Expression Operation and Operand</b></h2>
-                <h1>y = x² + 2x + 1</h1>  
+                <h1><b>y = x² + 2x + 1</b></h1>
                 <blockquote>
                     <h2><b>y,x,1</b>&emsp;is operand</h2>
                     <h2><b>=, +,exponent</b>&emsp;is operator</h2>
                     <h2><b>y = x² + 2x + 1</b>&emsp;is expression</h2>
                 </blockquote>
+
             </section>
+            <section id="Arithmetic_operators" class="main">
+                <h1>Arithmetic operators</h1>
+                <p>Arithmetic operators are used to perform mathematical operations like addition, subtraction,
+                    multiplication, etc.</p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Meaning</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Add two operands or unary plus</td>
+                            <td>x + y+ 2</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtract right operand from the left or unary minus</td>
+                            <td>x - y- 2</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiply two operands</td>
+                            <td>x * y</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Divide left operand by the right one (always results into float)</td>
+                            <td>x / y</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Modulus - remainder of the division of left operand by the right</td>
+                            <td>x % y (remainder of x/y)</td>
+                        </tr>
+                        <tr>
+                            <td>//</td>
+                            <td>Floor division - division that results into whole number adjusted to the left in the
+                                number line</td>
+                            <td>x // y</td>
+                        </tr>
+                        <tr>
+                            <td>**</td>
+                            <td>Exponent - left operand raised to the power of right</td>
+                            <td>x**y (x to the power y)</td>
+                        </tr>
+                    </tbody>
+                </table><sup><b><a href="https://www.programiz.com/python-programming/operators"
+                            target="_blank">programiz.com</a></b></sup>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/Arithmetic_operators_EX1.png" alt=""></span>
+                </blockquote>
+            </section>
+            <section id="Operator_Precedence" class="main">
+                <h1>Operator Precedence</h1>
+                <p>The operator precedence in Python is listed in the following table. It is in descending order (upper
+                    group has higher
+                    precedence than the lower ones).</p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Operators</th>
+                            <th>Meaning</th>
+                        </tr>
+                        <tr>
+                            <td><code>()</code></td>
+                            <td>Parentheses</td>
+                        </tr>
+                        <tr>
+                            <td><code>**</code></td>
+                            <td>Exponent</td>
+                        </tr>
+                        <tr>
+                            <td><code>+x</code>
+                                <font _mstmutation="1">, , </font><code>-x</code><code>~x</code>
+                            </td>
+                            <td>Unary plus, Unary minus, Bitwise NOT</td>
+                        </tr>
+                        <tr>
+                            <td><code>*</code>
+                                <font _mstmutation="1">, , , </font><code>/</code><code>//</code><code>%</code>
+                            </td>
+                            <td>Multiplication, Division, Floor division, Modulus</td>
+                        </tr>
+                        <tr>
+                            <td><code>+</code>
+                                <font _mstmutation="1">, </font><code>-</code>
+                            </td>
+                            <td>Addition, Subtraction</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;&lt;</code>
+                                <font _mstmutation="1">, </font><code>&gt;&gt;</code>
+                            </td>
+                            <td>Bitwise shift operators</td>
+                        </tr>
+                        <tr>
+                            <td><code>&amp;</code></td>
+                            <td>Bitwise AND</td>
+                        </tr>
+                        <tr>
+                            <td><code>^</code></td>
+                            <td>Bitwise XOR</td>
+                        </tr>
+                        <tr>
+                            <td><code>|</code></td>
+                            <td>Bitwise OR</td>
+                        </tr>
+                        <tr>
+                            <td><code>==</code>
+                                <font _mstmutation="1">, , , , , , , , , </font>
+                                <code>!=</code><code>&gt;</code><code>&gt;=</code><code>&lt;</code><code>&lt;=</code><code>is</code><code>is not</code><code>in</code><code>not in</code>
+                            </td>
+                            <td>Comparisons, Identity, Membership operators</td>
+                        </tr>
+                        <tr>
+                            <td><code>not</code></td>
+                            <td>Logical NOT</td>
+                        </tr>
+                        <tr>
+                            <td><code>and</code></td>
+                            <td>Logical AND</td>
+                        </tr>
+                        <tr>
+                            <td><code>or</code></td>
+                            <td>Logical OR</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
 
 
 
