@@ -37,7 +37,12 @@
         <nav id="nav">
             <ul>
                 <li><a href="#Print_String" class="active">Print String</a></li>
+                <li><a href="#Print_Numeric" class="active">Print Numeric</a></li>
+                <li><a href="#Print_StringNumeric" class="active">Print String + Numeric</a></li>
+                <li><a href="#Print_StringString" class="active">Print String + String</a></li>
+                <li><a href="Print_NumericNumeric" class="active">Print Numeric + Numeric</a></li>
                 <li><a href="index.html" class="active">Home Page</a></li>
+                
             </ul>
         </nav>
 
@@ -50,7 +55,7 @@
                         <li><code>print("Hello World")</code><br />
                             <b>Hello World</b>
                         </li>
-                        <li><code>print("Information and Network Engineering</code><br />
+                        <li><code>print("Information and Network Engineering")</code><br />
                             <b>Information and Network Engineering</b>
                         </li>
                         <li><code>print("Hello Anirach you will be success")</code><br />
@@ -70,13 +75,126 @@
                             <b>/\</b>
                         </li>
                         <li>
-                            
+                            <code>print('\ta\na\ta\ta\n\ta')</code><br />
+                            <b>&emsp;&emsp;&emsp;a&emsp;&emsp;&emsp;<br />
+                            a&emsp;&emsp;&#160;a&emsp;&emsp;&#160;a<br />
+                            &emsp;&emsp;&#160;&#160;a</b>
                         </li>
-                        
-                    
+                        <li><pre><code>print('''\ta
+a\ta\ta
+\ta'''</code></pre>
+                        <b>&emsp;&emsp;&emsp;a&emsp;&emsp;&emsp;<br />
+                            a&emsp;&emsp;&#160;a&emsp;&emsp;&#160;a<br />
+                            &emsp;&emsp;&#160;&#160;a</b>
+                        </li>
                     </ul>
                 </blockquote>
 
+            </section>
+            <section id="Print_Numeric" class="main">
+                <h1>Print Numeric</h1>
+                <blockquote>
+                    <ul class="alt">
+                        <li>
+                            <code>print('100.00')</code><br>
+                            <b>100.00</b>
+                        </li>
+                        <li>
+                            <code>print('%d' %100)</code><br>
+                            <b>100</b>
+                        </li>
+                        <li>
+                            <code>print('%d' %100.58)</code><br>
+                            <b>100</b>
+                        </li>
+                        <li>
+                            <code>print('%f' %-100.89)</code><br>
+                            <b>-100.890000</b>
+                        </li>
+                        <li>
+                            <code>print('%.2f' %100.89)</code><br>
+                            <b>100.89</b>
+                        </li>
+                        <li>
+                            <code>from math import pi</code><br>
+                            <code>print('%.2f' %pi)</code><br>
+                            <b>3.14</b>
+                        </li>
+                        <li>
+                            <code>from math import pi</code><br>
+                            <code>print('%.4f' %pi)</code><br>
+                            <b>3.1416</b>
+                        </li>
+                        <li>
+                            <code>from math import pi</code><br>
+                            <code>print('%.50f' %pi)</code><br>
+                            <b>3.14159265358979311599796346854418516159057617187500</b>
+                        </li>
+                    </ul>
+                </blockquote>
+            </section>
+            
+            <section id="Print_StringNumeric" class="main">
+                <h1>Print String + String</h1>
+                <blockquote>
+                    <ul class="alt">
+                        <li>
+                            <code>print('My age is', 25,'I have', 3500.50,'Bth.')</code><br>
+                            <b>My age is 25 I have 3500.5 Bth.</b>
+                        </li>
+                        <li>
+                            <code>print('My age is %d I have %.2f Bth.' %(25,3500.50))</code><br>
+                            <b>My age is 25 I have 3500.50 Bth.</b>
+                        </li>
+                        <li>
+                            <code>print('My age is' + str(25)+' I have '+ str(3500.50)+' Bth.')</code><br>
+                            <b>My age is 25 I have 3500.5 Bth.</b>
+                        </li>
+                        <li>
+                            <code>print('5+4 =',5+4)</code><br>
+                            <b>5+4 = 9</b>
+                        </li>
+                        <li>
+                            <code>print('5+4 = %.2f' %(5+4))</code><br>
+                            <b>5+4 = 9.00</b>
+                        </li>
+                        <li>
+                            <code>print('5+4 = ' + str(5+4))</code><br>
+                            <b>5+4 = 9</b>
+                        </li>
+                    </ul>
+                </blockquote>
+            </section>
+            
+            <section id="Print_StringString" class="main">
+                <h1>Print String + String</h1>
+                <blockquote>
+                    <ul class="alt">
+                        <li>
+                            <code>print("I'm Anirach","I'll keep practicing!")</code><br>
+                            <b>I'm Anirach I'll keep practicing!</b>
+                        </li>
+                        <li>
+                            <code>print("I'm Anirach" + "I'll keep practicing!"</code><br>
+                            <b>I'm Anirach I'll keep practicing!</b>
+                        </li>
+                    </ul>
+                </blockquote>
+            </section>
+            <section id="Print_NumericNumeric" class="main">
+                <h1>Print Numeric + Numeric</h1>
+                <blockquote>
+                    <ul class="alt">
+                        <li>
+                            <codee>print(1, 1, 2, 3, 5, 8, 13, 21, 34, 55)</codee><br>
+                            <b></b>
+                        </li>
+                        <li>
+                            <codee></codee><br>
+                            <b></b>
+                        </li>
+                    </ul>
+                </blockquote>
             </section>
         
         
