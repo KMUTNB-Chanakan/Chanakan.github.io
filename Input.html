@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>unknow</title>
+    <title>Input</title>
     <link rel="icon" href="./insert_images/INE_logo.jpg" type="image/icon type" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -24,13 +24,12 @@
 
         <!-- Header -->
         <header id="header">
-            <span class="logo"><img src="./insert_images/vecteezy_programmer-people.jpg" width="225" height="225"
+            <span class="logo"><img src="./insert_images/Python_logo.png" width="225" height="225"
                     alt="" /></span><br />
-            <sub><b><a href="https://www.vecteezy.com/vector-art/4865921-programmer-people-concept-use-laptop-and-programming-code-program-icon-spreading-with-modern-flat-style"
-                        target="_blank">vecteezy.com</a></b>
+            <sub><b><a href="https://www.python.org/community/logos/" target="_blank">python.org</a></b>
             </sub>
             <h1>Input<br />
-                </h1>
+            </h1>
             <p><sub>Make by <a href="https://www.instagram.com/likesxxzz2/" target="_blank">Chanakan Toursupap</a><br />
                     Information by <a href="https://scholar.google.co.th/citations?user=htY3F_IAAAAJ&hl=en"
                         target="_blank">Anirach
@@ -38,15 +37,92 @@
         </header>
         <nav id="nav">
             <ul>
-                <li><a href="#Input" class="active">Input</a></li>
+                <li><a href="#Input_String" class="active">Input Strings</a></li>
+                <li><a href="#Input_Numbers" class="active">Input Numbers</a></li>
+                <li><a href="#Read_Multiple_Values" class="active">Read Multiple Values</a></li>
+                <li><a href="#Comments" class="active">Comments</a></li>
                 <li><a href="index.html" class="active">Home Page</a></li>
             </ul>
         </nav>
 
         <!-- Main -->
         <div id="main">
-            <section id="Input" class="main">
-                <h1>Input</h1>
+            <section id="Input_String" class="main">
+                <h1>Input Strings</h1>
+                <p>Programs commonly need to <b>read input typed by the user on the
+                        keyboard</b>. We will use the Python functions to do this.</p>
+                <p>Python's built-in input function to read input from the keyboard. The input
+                    function reads a piece of data that has been entered at the keyboard and
+                    returns that data, as a string, back to the program. You normally use the
+                    input function in an assignment statement that follows this general format:<br>
+                    <code>variable = input(prompt)</code>
+                </p>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/Input_EX1.png" alt=""></span>
+                </blockquote>
+
+
+            </section>
+            <section id="Input_Numbers" class="main">
+                <h1>Input Numbers</h1>
+                <p>The <b>input function always returns the users input as a string</b>, even if the user
+                    enters numeric data. For example, suppose you call the input function,
+                    type the number 87, and press the Enter key. The value that is returned from
+                    the input function is the string '87'. This can be a problem if you want to use
+                    the value in a math operation. Math operations can be performed only on
+                    numeric values, not strings.</p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Function</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>int(item)</td>
+                            <td>You pass an argument to the int() function and it returns the argument's value
+                                converted to an int.</td>
+
+                        </tr>
+                        <tr>
+                            <td>float(item)</td>
+                            <td>You pass an argument to the float() function and it returns the argument's value
+                                converted to a float.</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <blockquote>
+                    <h3><b>Method 1</b></h3>
+                    <ul>
+                        <li>string_value = input('How many hours did you work? ')</li>
+                        <li>hours = int(string_value)</li>
+                    </ul>
+                    <h3><b>Method 2</b></h3>
+                    <ul>
+                        <li>hours = int(input('How many hours did you work? '))</li>
+                    </ul>
+                </blockquote>
+            </section>
+            <section id="Read_Multiple_Values" class="main">
+                <h1>Read Multiple Values</h1>
+                <h2><b>Read Multiple Values From keyboard</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/Read_Multiple_Values_1.png" alt=""></span>
+                    <span class="image main"><img src="./insert_images/Read_Multiple_Values_2.png" alt=""></span>
+                    <span class="image main"><img src="./insert_images/Read_Multiple_Values_3.png" alt=""></span>
+                </blockquote>
+
+
+            </section>
+            <section id="Comments" class="main">
+                <h1>Comments</h1>
+                <p>Comments are <b>notes of explanation</b> that document lines or sections of a
+                    program. Comments are part of the program, but the Python interpreter
+                    ignores them. They are intended for people who may be reading the source
+                    code.</p>
+                <span class="image main"><img src="./insert_images/Comments.png" alt=""></span>
+
             </section>
 
 
@@ -74,14 +150,15 @@
                     <dd>likesxxzz@gmail.com</dd>
                 </dl>
                 <ul class="icons">
-                    <li><a href="https://twitter.com/likesxxzz2" class="icon brands fa-twitter alt" target="_blank"><span
-                                class="label">Twitter</span></a></li>
+                    <li><a href="https://twitter.com/likesxxzz2" class="icon brands fa-twitter alt"
+                            target="_blank"><span class="label">Twitter</span></a></li>
                     <li><a href="https://www.facebook.com/profile.php?id=100020836193311"
-                            class="icon brands fa-facebook-f alt" target="_blank"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://www.instagram.com/likesxxzz2/" class="icon brands fa-instagram alt" target="_blank"><span
-                                class="label">Instagram</span></a></li>
-                    <li><a href="https://github.com/KMUTNB-Chanakan" class="icon brands fa-github alt" target="_blank"><span
-                                class="label">GitHub</span></a></li>
+                            class="icon brands fa-facebook-f alt" target="_blank"><span
+                                class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/likesxxzz2/" class="icon brands fa-instagram alt"
+                            target="_blank"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/KMUTNB-Chanakan" class="icon brands fa-github alt"
+                            target="_blank"><span class="label">GitHub</span></a></li>
                 </ul>
             </section>
             <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
