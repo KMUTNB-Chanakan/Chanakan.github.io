@@ -26,8 +26,7 @@
         <header id="header">
             <span class="logo"><img src="./insert_images/Python_logo.png" width="225" height="225"
                     alt="" /></span><br />
-            <sup><b><a href="https://www.python.org/community/logos/"
-                        target="_blank">python.org</a></b>
+            <sup><b><a href="https://www.python.org/community/logos/" target="_blank">python.org</a></b>
             </sup>
             <h1>if else elif<br />
                 and Flowchart</h1>
@@ -41,7 +40,7 @@
                 <li><a href="#if" class="active">if</a></li>
                 <li><a href="#if-else" class="active">if-elser</a></li>
                 <li><a href="#if-elif-else" class="active">if-elif-else</a></li>
-                <li><a href="#Nested-if" class="active">Nested if</a></li>
+                <li><a href="#Nested_if" class="active">Nested if</a></li>
                 <li><a href="index.html" class="active">Home Page</a></li>
             </ul>
         </nav>
@@ -52,24 +51,28 @@
             <section id="if" class="main">
                 <h1>if</h1>
                 <h2><b>What is if...else statement in Python?</b></h2>
-                <p>Decision making is required when we want to execute a code only if a certain condition is satisfied.</p>
+                <p>Decision making is required when we want to execute a code only if a certain condition is satisfied.
+                </p>
                 <p>The statement is used in Python for decision making.<code>if…elif…else</code></p>
-                <h2><B>Python if Statement Syntax</B></h2>
+                <h3><B>Python if Statement Syntax</B></h3>
                 <pre><code>if test expression:
     statement(s)</code></pre>
-                <p>Here, the program evaluates the and will execute statement(s) only if the test expression is.<code>test expression</code><code>True</code></p>
+                <p>Here, the program evaluates the and will execute statement(s) only if the test expression
+                    is.<code>test expression</code><code>True</code></p>
                 <p>If the test expression is , the statement(s) is not executed.<code>False</code></p>
-                <p>In Python, the body of the statement is indicated by the indentation. The body starts with an indentation and the first
-                unindented line marks the end.<code>if</code></p>
-                <p>Python interprets non-zero values as . and are interpreted as .<code>True</code><code>None</code><code>0</code><code>False</code></p>
-                <h2><b>Python if Statement Flowchart</b></h2>
+                <p>In Python, the body of the statement is indicated by the indentation. The body starts with an
+                    indentation and the first
+                    unindented line marks the end.<code>if</code></p>
+                <p>Python interprets non-zero values as . and are interpreted as
+                    .<code>True</code><code>None</code><code>0</code><code>False</code></p>
+                <h2><b>Flowchart</b></h2>
                 <blockquote>
                     <span class="image main"><img src="./insert_images/Python_if_statement.webp" alt=""></span>
                 </blockquote>
                 <h2><b>Example</b></h2>
                 <blockquote>
-                   <h3>Python if Statement</h3>
-                   <pre><code># If the number is positive, we print an appropriate message
+                    <h3>Python if Statement</h3>
+                    <pre><code># If the number is positive, we print an appropriate message
                 
 num = 3
 if num > 0:
@@ -84,7 +87,7 @@ print("This is also always printed.")</code></pre>
                     <pre><code>3 is a positive number
 This is always printed
 This is also always printed.</code></pre>
-                        
+
                 </blockquote>
                 <p>In the above example, is the test expression.<code>num > 0</code></p>
                 <p>The body of is executed only if this evaluates to .<code>if</code><code>True</code></p>
@@ -94,12 +97,157 @@ This is also always printed.</code></pre>
                     skipped.<code>num</code><code>if</code></p>
                 <p>The statement falls outside of the block (unindented). Hence, it is executed regardless of the test
                     expression.<code>print()</code><code>if</code></p>
+                <sub><b><a href="https://www.programiz.com/python-programming/if-elif-else"
+                            target="_blank">programiz.com</a></b></sub>
             </section>
             <section id="if-else" class="main">
                 <h1>if-elser</h1>
+                <h2><b>Python if...else Statement</b></h2>
+                <h3><b>Syntax of if...else</b></h3>
+                <pre><code>if test expression:
+    Body of if
+else:
+    Body of else</code></pre>
+                <p>The statement evaluates and will execute the body of only when the test condition is
+                    .<br><code>if..else</code><code>test expression</code><code>if</code><code>True</code></p>
+                <p>If the condition is , the body of is executed. Indentation is used to separate the
+                    blocks.<br><code>False</code><code>else</code></p>
+                <h2><b>Flowchart</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/Python_if_else_statement.webp" alt=""></span>
+                </blockquote>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <pre><code># Program checks if the number is positive or negative
+# And displays an appropriate message
+                    
+num = 3
+                    
+# Try these two variations as well.
+# num = -5
+# num = 0
+                    
+if num >= 0:
+    print("Positive or Zero")
+else:
+    print("Negative number")</code></pre>
+                    <h3>Output</h3>
+                    <pre><code>Positive or Zero</code></pre>
+                </blockquote>
+                <p>In the above example, when is equal to 3, the test expression is true and the body of is executed and
+                    the of else is skipped.<code>num</code><code>if</code><code>body</code></p>
+                <p>
+                    If is equal to -5, the test expression is false and the body of is executed and the body of
+                    is skipped.<code>num</code><code>else</code><code>if</code>
+                </p>
+                <p>
+                    If is equal to 0, the test expression is true and body of is executed and of else is skipped.
+                    <code>num</code><code>if</code><code>body</code>
+                </p>
+                <sub><b><a href="https://www.programiz.com/python-programming/if-elif-else"
+                            target="_blank">programiz.com</a></b></sub>
 
             </section>
-
+            <section id="if-elif-else" class="main">
+                <h1>if-elif-else</h1>
+                <h2><b>Python if...elif...else Statement</b></h2>
+                <h3><b>Syntax of if...elif...else</b></h3>
+                <pre><code>if test expression:
+    Body of if
+elif test expression:
+    Body of elif
+else:
+    Body of else</code></pre>
+                <p>
+                    The is short for else if. It allows us to check for multiple expressions.
+                    <code>elif</code>
+                </p>
+                <p>
+                    If the condition for is , it checks the condition of the next block and so on.
+                    <code>if</code><code>False</code><code>elif</code>
+                </p>
+                <p>
+                    If all the conditions are , the body of else is executed.<code>False</code>
+                </p>
+                <p>
+                    Only one block among the several blocks is executed according to the condition.
+                    <code>if...elif...else</code>
+                </p>
+                <p>
+                    The block can have only one block. But it can have multiple blocks.
+                    <code>if</code><code>else</code><code>elif</code>
+                </p>
+                <h2><b>Flowchart</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/Python_if_elif_else_statement.webp"
+                            alt=""></span>
+                </blockquote>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <pre><code>'''In this program,
+we check if the number is positive or
+negative or zero and
+display an appropriate message'''
+                        
+num = 3.4
+                        
+# Try these two variations as well:
+# num = 0
+ # num = -4.5
+                        
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")</code></pre>
+                    <h3>Output</h3>
+                    <pre><code>Positive number</code></pre>
+                </blockquote>
+                <p>
+                    When variable is positive, is printed.<code>num</code><code>Positive number</code>
+                </p>
+                <p>If is equal to 0, is printed.<code>num</code><code>Zero</code></p>
+                <p>If is negative, is printed.<code>num</code><code>Negative number</code></p>
+                <sub><b><a href="https://www.programiz.com/python-programming/if-elif-else"
+                            target="_blank">programiz.com</a></b></sub>
+            </section>
+            <section id="Nested_if" class="main">
+                <h1>Nested if</h1>
+                <p> We can have a statement inside another statement. This is called nesting in computer
+                    programming.<code>if...elif...else</code><code>if...elif...else</code></p>
+                <p>Any number of these statements can be nested inside one another. Indentation is the only way to
+                    figure out the level of
+                    nesting. They can get confusing, so they must be avoided unless necessary.</p>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <pre><code>'''In this program, we input a number
+check if the number is positive or
+negative or zero and display
+an appropriate message
+This time we use nested if statement'''
+                
+num = float(input("Enter a number: "))
+if num >= 0:
+    if num == 0:
+        print("Zero")
+    else:
+        print("Positive number")
+else:
+    print("Negative number")</code></pre>
+                    <h3>Output 1</h3>
+                    <pre><code>Enter a number: 5
+Positive number</code></pre>
+                    <h3>Output 2</h3>
+                    <pre><code>Enter a number: -1
+Negative number</code></pre>
+                    <h3>Output 3</h3>
+                    <pre><code>Enter a number: 0
+Zero</code></pre>
+                </blockquote>
+                <sub><b><a href="https://www.programiz.com/python-programming/if-elif-else"
+                            target="_blank">programiz.com</a></b></sub>
+            </section>
 
 
 
@@ -125,14 +273,15 @@ This is also always printed.</code></pre>
                     <dd>likesxxzz@gmail.com</dd>
                 </dl>
                 <ul class="icons">
-                    <li><a href="https://twitter.com/likesxxzz2" class="icon brands fa-twitter alt" target="_blank"><span
-                                class="label">Twitter</span></a></li>
+                    <li><a href="https://twitter.com/likesxxzz2" class="icon brands fa-twitter alt"
+                            target="_blank"><span class="label">Twitter</span></a></li>
                     <li><a href="https://www.facebook.com/profile.php?id=100020836193311"
-                            class="icon brands fa-facebook-f alt" target="_blank"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://www.instagram.com/likesxxzz2/" class="icon brands fa-instagram alt" target="_blank"><span
-                                class="label">Instagram</span></a></li>
-                    <li><a href="https://github.com/KMUTNB-Chanakan" class="icon brands fa-github alt" target="_blank"><span
-                                class="label">GitHub</span></a></li>
+                            class="icon brands fa-facebook-f alt" target="_blank"><span
+                                class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/likesxxzz2/" class="icon brands fa-instagram alt"
+                            target="_blank"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/KMUTNB-Chanakan" class="icon brands fa-github alt"
+                            target="_blank"><span class="label">GitHub</span></a></li>
                 </ul>
             </section>
             <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
