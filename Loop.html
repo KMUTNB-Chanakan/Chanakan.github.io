@@ -41,6 +41,9 @@
             <ul>
                 <li><a href="#for_Loop" class="active">for Loop</a></li>
                 <li><a href="#while_Loop" class="active">while Loop</a></li>
+                <li><a href="#break_statement" class="active">break statement</a></li>
+                <li><a href="#continue_statement" class="active">continue statement</a></li>
+                <li><a href="#pass_statement" class="active">pass statement</a></li>
                 <li><a href="index.html" class="active">Home Page</a></li>
             </ul>
         </nav>
@@ -83,20 +86,26 @@ for val in numbers:
     sum = sum+val
                     
 print("The sum is", sum)</code></pre>
-                <h3>When you run the program, the output will be:</h3>
-                <pre><code>The sum is 48</code></pre>
+                    <h3>When you run the program, the output will be:</h3>
+                    <pre><code>The sum is 48</code></pre>
                 </blockquote>
                 <h2><b>The range() function</b></h2>
                 <blockquote>
-                    <p>We can generate a sequence of numbers using <code>range()</code> function. <code>range(10)</code> will generate
+                    <p>We can generate a sequence of numbers using <code>range()</code> function. <code>range(10)</code>
+                        will generate
                         numbers from 0 to 9 (10 numbers).</p>
-                    <p>We can also define the start, stop and step size as <code>range(start, stop,step_size)</code>. step_size defaults to
+                    <p>We can also define the start, stop and step size as <code>range(start, stop,step_size)</code>.
+                        step_size defaults to
                         1 if not provided.</p>
-                    <p>The <code>range</code> object is "lazy" in a sense because it doesn't generate every number that it "contains" when
-                        we create it. However, it is not an iterator since it supports <code>in</code>, <code>len</code> and
-                        <code>__getitem__</code> operations.</p>
-                    <p>This function does not store all the values in memory; it would be inefficient. So it remembers the start, stop, step
-                    size and generates the next number on the go.</p>
+                    <p>The <code>range</code> object is "lazy" in a sense because it doesn't generate every number that
+                        it "contains" when
+                        we create it. However, it is not an iterator since it supports <code>in</code>, <code>len</code>
+                        and
+                        <code>__getitem__</code> operations.
+                    </p>
+                    <p>This function does not store all the values in memory; it would be inefficient. So it remembers
+                        the start, stop, step
+                        size and generates the next number on the go.</p>
                     <p>To force this function to output all the items, we can use the function <code>list()</code>.</p>
                     <p>The following example will clarify this.</p>
                     <pre><code>print(range(10))
@@ -111,8 +120,10 @@ print(list(range(2, 20, 3)))</code></pre>
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 [2, 3, 4, 5, 6, 7]
 [2, 5, 8, 11, 14, 17]</code></pre>
-                    <p>We can use the <code>range()</code> function in <code>for</code> loops to iterate through a sequence of numbers. It
-                        can be combined with the <code>len()</code> function to iterate through a sequence using indexing. Here is an
+                    <p>We can use the <code>range()</code> function in <code>for</code> loops to iterate through a
+                        sequence of numbers. It
+                        can be combined with the <code>len()</code> function to iterate through a sequence using
+                        indexing. Here is an
                         example.</p>
                     <pre><code># Program to iterate through a list using indexing
                     
@@ -121,16 +132,295 @@ genre = ['pop', 'rock', 'jazz']
 # iterate over the list using index
 for i in range(len(genre)):
     print("I like", genre[i])</code></pre>
-                <h3>Output</h3>
-                <pre><code>I like pop
+                    <h3>Output</h3>
+                    <pre><code>I like pop
 I like rock
 ​I like jazz</code></pre>
                 </blockquote>
-                
+                <h2><b>for loop with else</b></h2>
+                <blockquote>
+                    <p>A <code>for</code> loop can have an optional <code>else</code> block as well. The
+                        <code>else</code> part is executed
+                        if the items in the sequence used in for loop exhausts.
+                    </p>
+                    <p>The break keyword can be used to stop a for loop. In such cases, the else part is ignored.</p>
+                    <p>Hence, a for loop's else part runs if no break occurs.</p>
+                    <p>Here is an example to illustrate this.</p>
+                    <pre><code>digits = [0, 1, 5]
+                    
+for i in digits:
+    print(i)
+else:
+    print("No items left.")</code></pre>
+                    <h3>When you run the program, the output will be:</h3>
+                    <pre><code>0
+1
+5
+No items left.</code></pre>
+                    <p>Here, the for loop prints items of the list until the loop exhausts. When the for loop exhausts,
+                        it executes the
+                        block of code in the <code>else</code> and prints <code>No items left.</code></p>
+                    <p>This <code>for...else</code> statement can be used with the <code>break</code> keyword to run the
+                        <code>else</code>
+                        block only when the <code>break</code> keyword was not executed. Let's take an example:
+                    </p>
+                    <pre><code># program to display student's marks from record
+student_name = 'Soyuj'
+                            
+marks = {'James': 90, 'Jules': 55, 'Arthur': 77}
+                            
+for student in marks:
+    if student == student_name:
+        print(marks[student])
+        break
+else:
+    print('No entry with that name found.')</code></pre>
+                    <h3>Output</h3>
+                    <pre><code>No entry with that name found.</code></pre>
+                </blockquote>
+                <sub><b><a href="https://www.programiz.com/python-programming/for-loop"
+                            target="_blank">programiz.com</a></b></sub>
+
             </section>
 
             <section id="while_Loop" class="main">
                 <h1>while Loop</h1>
+                <h2><b>What is while loop in Python?</b></h2>
+                <p>The while loop in Python is used to iterate over a block of code as long as the test expression
+                    (condition) is true.</p>
+                <p>We generally use this loop when we don't know the number of times to iterate beforehand.</p>
+                <h2><b>Syntax of while Loop in Python</b></h2>
+                <pre><code>while test_expression:
+    Body of while</code></pre>
+                <p>In the while loop, test expression is checked first. The body of the loop is entered only if the
+                    <code>test_expression</code> evaluates to <code>True</code>. After one iteration, the test
+                    expression is checked
+                    again. This process continues until the <code>test_expression</code> evaluates to
+                    <code>False</code>.
+                </p>
+                <p>In Python, the body of the while loop is determined through indentation.</p>
+                <p>The body starts with indentation and the first unindented line marks the end.</p>
+                <h2><b>Flowchart</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/whileLoopFlowchart.webp"></span>
+                </blockquote>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <pre><code># Program to add natural
+# numbers up to
+# sum = 1+2+3+...+n
+                            
+# To take input from the user,
+# n = int(input("Enter n: "))
+                            
+n = 10
+                            
+# initialize sum and counter
+sum = 0
+i = 1
+                            
+while i <= n: 
+    sum = sum + i
+    i = i + 1 # update counter
+# print the sum 
+print("The sum is", sum)</code></pre>
+                    <h3>When you run the program, the output will be:</h3>
+                    <pre><code>Enter n: 10
+The sum is 55</code></pre>
+
+                    <p>
+                        In the above program, the test expression will be as long as our counter variable is less
+                        than or equal to (10 in our program).<code>True</code><code>i</code><code>n</code>
+                    </p>
+                    <p>We need to increase the value of the counter variable in the body of the loop. This is very
+                        important (and mostly
+                        forgotten). Failing to do so will result in an infinite loop (never-ending loop).</p>
+                    <p>Finally, the result is displayed.</p>
+                </blockquote>
+                <h2><b>While loop with else</b></h2>
+                <blockquote>
+                    <p>
+                        Same as with for loops, while loops can also have an optional block.<code>else</code>
+                    </p>
+                    <p>
+                        The part is executed if the condition in the while loop evaluates to
+                        .<code>else</code><code>False</code>
+                    </p>
+                    <p>
+                        The while loop can be terminated with a break statement. In
+                        such cases, the part is ignored. Hence, a while loop's part runs if no break occurs and the
+                        condition is false.
+                        <code>else</code><code>else</code>
+                    </p>
+                    <p>Here is an example to illustrate this.</p>
+                    <pre><code>'''Example to illustrate
+the use of else statement
+with the while loop'''
+                                            
+counter = 0
+                                            
+while counter < 3:
+    print("Inside loop")
+    counter=counter + 1
+else:
+    print("Inside else")</code></pre>
+                    <h3>Output</h3>
+                    <pre><code>Inside loop
+Inside loop
+Inside loop
+Inside else</code></pre>
+                    <p>
+                        Here, we use a counter variable to print the string three times.<code>Inside
+        loop</code>
+                    </p>
+                    <p>
+                        On the fourth iteration, the condition in becomes . Hence, the part is executed.
+                        <code>while</code><code>False</code><code>else</code>
+                    </p>
+                </blockquote>
+                <sub><b><a href="https://www.programiz.com/python-programming/while-loop"
+                            target="_blank">programiz.com</a></b></sub>
+
+
+            </section>
+            <section class="main">
+                <h1>break and continue</h1>
+                <h2><b>What is the use of break and continue in Python?</b></h2>
+                <p>In Python, <code>break</code> and <code>continue</code> statements can alter the flow of a normal
+                    loop.</p>
+                <p>Loops iterate over a block of code until the test expression is false, but sometimes we wish to
+                    terminate the current
+                    iteration or even the whole loop without checking test expression.</p>
+                <p>The&nbsp;<code>break</code> and <code>continue</code> statements are used in these cases.</p>
+                <sub><b><a href="https://www.programiz.com/python-programming/break-continue"
+                            target="_blank">programiz.com</a></b></sub>
+            </section>
+
+            <section id="break_statement" class="main">
+                <h1>break statement</h1>
+                <h2><b>Python break statement</b></h2>
+                <p>The <code>break</code> statement terminates the loop containing it. Control of the program flows to
+                    the statement
+                    immediately after the body of the loop.</p>
+                <p>If the <code>break</code> statement is inside a nested loop (loop inside another loop), the
+                    <code>break</code>
+                    statement will terminate the innermost loop.
+                </p>
+                <h2><b>Syntax of break</b></h2>
+                <pre><code>break</code></pre>
+                <h2><b>Flowchart of break</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/flowchart-break-statement.webp"></span>
+                    <h3>The working of break statement in for loop and while loop is shown below.</h3>
+                    <span class="image main"><img src="./insert_images/how-break-statement-works.webp"></span>
+                </blockquote>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <pre><code># Use of break statement inside the loop
+                    
+for val in "string":
+    if val == "i":
+          break
+    print(val)
+                    
+print("The end")</code></pre>
+                    <h3>Output</h3>
+                    <pre><code>s
+t
+r
+The end</code></pre>
+                    <p>In this program, we iterate through the <code>"string"</code> sequence. We check if the letter is
+                        <code>i</code>,
+                        upon which we break from the loop. Hence, we see in our output that all the letters up till
+                        <code>i</code> gets
+                        printed. After that, the loop terminates.
+                    </p>
+                </blockquote>
+                <sub><b><a href="https://www.programiz.com/python-programming/break-continue"
+                            target="_blank">programiz.com</a></b></sub>
+
+
+            </section>
+            <section id="continue_statement" class="main">
+                <h1>continue statement</h1>
+                <h2><b>Python continue statement</b></h2>
+                <p>
+                    The statement is used to skip the rest of the code inside a loop for the current iteration
+                    only. Loop does not terminate but continues on with the next iteration.<code>continue</code>
+                </p>
+                <h2><b>Syntax of Continue</b></h2>
+                <pre><code>continue</code></pre>
+                <h2><b>Flowchart of continue</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/continue-statement-flowchart.webp" alt=""></span>
+                    <h3>
+                        The working of the statement in for and while loop is shown below.
+                        <code>continue</code>
+                    </h3>
+                    <span class="image main"><img src="./insert_images/how-continue-statment-works.webp" alt=""></span>
+                </blockquote>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <pre><code># Program to show the use of continue statement inside loops
+                    
+for val in "string":
+    if val == "i":
+        continue
+    print(val)
+                    
+print("The end")</code></pre>
+                    <h3>Output</h3>
+                    <pre><code>s
+t
+r
+n
+g
+The end</code></pre>
+                    <p>
+                        This program is same as the above example except the statement has been replaced with
+                        .<code>break</code><code>continue</code>
+                    </p>
+                    <p>
+                        We continue with the loop, if the string is <code>i</code>, not executing the rest of the block.
+                        Hence, we
+                        see in our output that all the letters except <code>i</code> gets printed.
+                    </p>
+                    <sub><b><a href="https://www.programiz.com/python-programming/break-continue"
+                                target="_blank">programiz.com</a></b></sub>
+                </blockquote>
+
+            </section>
+
+            <section id="pass_statement" class="main">
+                <h1>pass statement</h1>
+                <h2><b>What is pass statement in Python?</b></h2>
+                <p>In Python programming, the <code>pass</code> statement is a null statement. The difference between a
+                    comment and a <code>pass</code> statement in
+                    Python is that while the interpreter ignores a comment entirely, <code>pass</code> is not ignored.
+                </p>
+                <p>However, nothing happens when the pass is executed. It results in no operation (NOP).</p>
+                <h2><b>Syntax of pass</b></h2>
+                <pre><code>pass</code></pre>
+                <p>We generally use it as a placeholder.</p>
+                <p>Suppose we have a loop or a function that is not implemented yet, but we want to implement it in the
+                    future. They cannot
+                    have an empty body. The interpreter would give an error. So, we use the <code>pass</code> statement
+                    to construct a body that does nothing.</p>
+                <h2><B>Example</B></h2>
+                <blockquote>
+                    <pre><code>'''pass is just a placeholder for
+functionality to be added later.'''
+sequence = {'p', 'a', 's', 's'}
+for val in sequence:
+    pass</code></pre>
+                    <h3>We can do the same thing in an empty function or class as well.</h3>
+                    <pre><code>def function(args):
+    pass</code></pre>
+                    <pre><code>class Example:
+    pass</code></pre>
+                </blockquote>
+                <sub><b><a href="https://www.programiz.com/python-programming/pass-statement"
+                            target="_blank">programiz.com</a></b></sub>
             </section>
 
 
