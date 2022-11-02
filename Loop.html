@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Loop</title>
+    <link rel="icon" href="./insert_images/INE_logo.jpg" type="image/icon type" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <span class="logo"><img src="./insert_images/Python_logo.png" width="225" height="225"
+                    alt="" /></span><br />
+            <sup><b><a href="https://www.python.org/community/logos/" target="_blank">python.org</a></b>
+            </sup>
+            <h1>Loop<br />
+            </h1>
+            <p><sub>Make by <a href="https://www.instagram.com/likesxxzz2/" target="_blank">Chanakan
+                        Toursupap</a><br />
+                    Information by <a href="https://scholar.google.co.th/citations?user=htY3F_IAAAAJ&hl=en"
+                        target="_blank">Anirach
+                        Mingkhwan</a></sub></p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#for_Loop" class="active">for Loop</a></li>
+                <li><a href="#while_Loop" class="active">while Loop</a></li>
+                <li><a href="index.html" class="active">Home Page</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <section id="for_Loop" class="main">
+                <h1>for Loop</h1>
+                <h2><b>What is for loop in Python?</b></h2>
+                <p>The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable
+                    objects. Iterating
+                    over a sequence is called traversal.</p>
+                <h2><b>Syntax of for Loop</b></h2>
+                <pre><code>for val in sequence:
+    loop body</code></pre>
+                <p>Here, <code>val</code> is the variable that takes the value of the item inside the sequence on each
+                    iteration.
+                </p>
+                <p>
+                    Loop continues until we reach the last item in the sequence. The body of for loop is separated from
+                    the rest of the code
+                    using indentation.</p>
+                <h2><b>Flowchart of for Loop</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/forLoop.webp" alt=""></span>
+                </blockquote>
+                <h2><b>Example</b></h2>
+
+                <blockquote>
+                    <pre><code># Program to find the sum of all numbers stored in a list
+                    
+# List of numbers
+numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+                    
+# variable to store the sum
+sum = 0
+                    
+# iterate over the list
+for val in numbers:
+    sum = sum+val
+                    
+print("The sum is", sum)</code></pre>
+                <h3>When you run the program, the output will be:</h3>
+                <pre><code>The sum is 48</code></pre>
+                </blockquote>
+                <h2><b>The range() function</b></h2>
+                <blockquote>
+                    <p>We can generate a sequence of numbers using <code>range()</code> function. <code>range(10)</code> will generate
+                        numbers from 0 to 9 (10 numbers).</p>
+                    <p>We can also define the start, stop and step size as <code>range(start, stop,step_size)</code>. step_size defaults to
+                        1 if not provided.</p>
+                    <p>The <code>range</code> object is "lazy" in a sense because it doesn't generate every number that it "contains" when
+                        we create it. However, it is not an iterator since it supports <code>in</code>, <code>len</code> and
+                        <code>__getitem__</code> operations.</p>
+                    <p>This function does not store all the values in memory; it would be inefficient. So it remembers the start, stop, step
+                    size and generates the next number on the go.</p>
+                    <p>To force this function to output all the items, we can use the function <code>list()</code>.</p>
+                    <p>The following example will clarify this.</p>
+                    <pre><code>print(range(10))
+                    
+print(list(range(10)))
+                    
+print(list(range(2, 8)))
+                    
+print(list(range(2, 20, 3)))</code></pre>
+                    <h3>Output</h3>
+                    <pre><code>range(0, 10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2, 3, 4, 5, 6, 7]
+[2, 5, 8, 11, 14, 17]</code></pre>
+                    <p>We can use the <code>range()</code> function in <code>for</code> loops to iterate through a sequence of numbers. It
+                        can be combined with the <code>len()</code> function to iterate through a sequence using indexing. Here is an
+                        example.</p>
+                    <pre><code># Program to iterate through a list using indexing
+                    
+genre = ['pop', 'rock', 'jazz']
+                    
+# iterate over the list using index
+for i in range(len(genre)):
+    print("I like", genre[i])</code></pre>
+                <h3>Output</h3>
+                <pre><code>I like pop
+I like rock
+​I like jazz</code></pre>
+                </blockquote>
+                
+            </section>
+
+            <section id="while_Loop" class="main">
+                <h1>while Loop</h1>
+            </section>
+
+
+
+
+
+
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>About</h2>
+                <p>This website is hosted by Chanakan Toursupap. If you ask why it was made? Ask the person who ordered
+                    the work below.</p>
+                <ul class="actions">
+                    <li><a href="https://www.facebook.com/anirach" class="button" target="_blank">Learn More</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Contact</h2>
+                <dl class="alt">
+                    <dt>Phone</dt>
+                    <dd>(+66) 096-840-2047 </dd>
+                    <dt>Email</dt>
+                    <dd>likesxxzz@gmail.com</dd>
+                </dl>
+                <ul class="icons">
+                    <li><a href="https://twitter.com/likesxxzz2" class="icon brands fa-twitter alt"
+                            target="_blank"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100020836193311"
+                            class="icon brands fa-facebook-f alt" target="_blank"><span
+                                class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/likesxxzz2/" class="icon brands fa-instagram alt"
+                            target="_blank"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/KMUTNB-Chanakan" class="icon brands fa-github alt"
+                            target="_blank"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+            <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+</html>
