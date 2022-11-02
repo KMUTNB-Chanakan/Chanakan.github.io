@@ -41,6 +41,11 @@
                 <li><a href="#Python_Operators" class="active">Python Operators</a></li>
                 <li><a href="#Arithmetic_operators" class="active">Arithmetic operators</a></li>
                 <li><a href="#Operator_Precedence" class="active">Operator Precedence</a></li>
+                <li><a href="#Comparison_Operators" class="active">Comparison Operators</a></li>
+                <li><a href="#Logical_Operators" class="active">Logical Operators</a></li>
+                <li><a href="#Bitwise_Operators" class="active">Bitwise Operators</a></li>
+                <li><a href="#Assignment_Operators" class="active">Assignment Operators</a></li>
+                <li><a href="#Special_Operators" class="active">Special Operators</a></li>
                 <li><a href="index.html" class="active">Home Page</a></li>
             </ul>
         </nav>
@@ -109,7 +114,8 @@
                             <td>x**y (x to the power y)</td>
                         </tr>
                     </tbody>
-                </table><sup><b><a href="https://www.programiz.com/python-programming/operators"
+                </table>
+                <sup><b><a href="https://www.programiz.com/python-programming/operators"
                             target="_blank">programiz.com</a></b></sup>
                 <h2><b>Example</b></h2>
                 <blockquote>
@@ -136,26 +142,23 @@
                             <td>Exponent</td>
                         </tr>
                         <tr>
-                            <td><code>+x</code>
-                                <font _mstmutation="1">, , </font><code>-x</code><code>~x</code>
+                            <td><code>+x</code>,<code>-x</code>,<code>~x</code>
                             </td>
                             <td>Unary plus, Unary minus, Bitwise NOT</td>
                         </tr>
                         <tr>
                             <td><code>*</code>
-                                <font _mstmutation="1">, , , </font><code>/</code><code>//</code><code>%</code>
+                                ,<code>/</code>,<code>//</code>,<code>%</code>
                             </td>
                             <td>Multiplication, Division, Floor division, Modulus</td>
                         </tr>
                         <tr>
-                            <td><code>+</code>
-                                <font _mstmutation="1">, </font><code>-</code>
+                            <td><code>+</code>,<code>-</code>
                             </td>
                             <td>Addition, Subtraction</td>
                         </tr>
                         <tr>
-                            <td><code>&lt;&lt;</code>
-                                <font _mstmutation="1">, </font><code>&gt;&gt;</code>
+                            <td><code>&lt;&lt;</code>,<code>&gt;&gt;</code>
                             </td>
                             <td>Bitwise shift operators</td>
                         </tr>
@@ -172,9 +175,7 @@
                             <td>Bitwise OR</td>
                         </tr>
                         <tr>
-                            <td><code>==</code>
-                                <font _mstmutation="1">, , , , , , , , , </font>
-                                <code>!=</code><code>&gt;</code><code>&gt;=</code><code>&lt;</code><code>&lt;=</code><code>is</code><code>is not</code><code>in</code><code>not in</code>
+                            <td><code>==</code>,<code>!=</code>,<code>&gt;</code>,<code>&gt;=</code>,<code>&lt;</code>,<code>&lt;=</code>,<code>is</code>,<code>is not</code>,<code>in</code>,<br><code>not in</code>
                             </td>
                             <td>Comparisons, Identity, Membership operators</td>
                         </tr>
@@ -192,6 +193,334 @@
                         </tr>
                     </tbody>
                 </table>
+                <sup><b><a href="https://www.programiz.com/python-programming/precedence-associativity"
+                            target="_blank">programiz.com</a></b></sup>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/Operator_Precedence_EX1.png" alt=""></span>
+                </blockquote>
+            </section>
+            <section id="Comparison_Operators" class="main">
+                <h1>Comparison Operators</h1>
+                <p>Comparison operators are used to compare values. It returns either or according to the
+                    condition.<code>True</code><code>False</code></p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Meaning</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>&gt;</td>
+                            <td>Greater than - True if left operand is greater than the right</td>
+                            <td>x &gt; y</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;</td>
+                            <td>Less than - True if left operand is less than the right</td>
+                            <td>x &lt; y</td>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Equal to - True if both operands are equal</td>
+                            <td>x == y</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>Not equal to - True if operands are not equal</td>
+                            <td>x != y</td>
+                        </tr>
+                        <tr>
+                            <td>&gt;=</td>
+                            <td>Greater than or equal to - True if left operand is greater than or equal to the right
+                            </td>
+                            <td>x &gt;= y</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;=</td>
+                            <td>Less than or equal to - True if left operand is less than or equal to the right</td>
+                            <td>x &lt;= y</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <sup><b><a href="https://www.programiz.com/python-programming/operators"
+                            target="_blank">programiz.com</a></b></sup>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/Comparison_Operators_EX1.png" alt=""></span>
+                </blockquote>
+            </section>
+            <section id="Logical_Operators" class="main">
+                <h1>Logical Operators</h1>
+                <p>Logical operators are the <code>and</code>,<code>or</code>,<code>not</code> operators.</p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Meaning</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>and</td>
+                            <td>True if both the operands are true</td>
+                            <td>x and y</td>
+                        </tr>
+                        <tr>
+                            <td>or</td>
+                            <td>True if either of the operands is true</td>
+                            <td>x or y</td>
+                        </tr>
+                        <tr>
+                            <td>not</td>
+                            <td>True if operand is false (complements the operand)</td>
+                            <td>not x</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <sup><b><a href="https://www.programiz.com/python-programming/operators"
+                            target="_blank">programiz.com</a></b></sup>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/Logical_operators_EX1.png" alt=""></span>
+                </blockquote>
+            </section>
+            <section id="Bitwise_Operators" class="main">
+                <h1>Bitwise Operators</h1>
+                <P>Bitwise operators act on operands as if they were strings of binary digits. They operate bit by bit,
+                    hence the name.</P>
+                <P>For example, 2 is <code>10</code> in binary and 7 is <code>111</code></P>
+                <p><strong>In the table below:</strong> Let <var>x</var> = 10 (<code>0000 1010</code> in binary) and
+                    <var>y</var> = 4
+                    (<code>0000 0100</code> in binary)</p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Meaning</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>&amp;</td>
+                            <td>Bitwise AND</td>
+                            <td>x &amp; y = 0 (<code>0000 0000</code>)</td>
+                        </tr>
+                        <tr>
+                            <td>|</td>
+                            <td>Bitwise OR</td>
+                            <td>x | y = 14 (<code>0000 1110</code>)</td>
+                        </tr>
+                        <tr>
+                            <td>~</td>
+                            <td>Bitwise NOT</td>
+                            <td>~x = -11 (<code>1111 0101</code>)</td>
+                        </tr>
+                        <tr>
+                            <td>^</td>
+                            <td>Bitwise XOR</td>
+                            <td>x ^ y = 14 (<code>0000 1110</code>)</td>
+                        </tr>
+                        <tr>
+                            <td>&gt;&gt;</td>
+                            <td>Bitwise right shift</td>
+                            <td>x &gt;&gt; 2 = 2 (<code>0000 0010</code>)</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;&lt;</td>
+                            <td>Bitwise left shift</td>
+                            <td>x &lt;&lt; 2 = 40 (<code>0010 1000</code>)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <sup><b><a href="https://www.programiz.com/python-programming/operators" target="_blank">programiz.com</a></b></sup>
+            </section>
+            
+            <section id="Assignment_Operators" class="main">
+                <h1>Assignment Operators</h1>
+                <p>Assignment operators are used in Python to assign values to variables.</p>
+                <p><code>a = 5</code> is a simple assignment operator that assigns the value 5 on the right to the variable <code>a</code>
+                    on the left.</p>
+                <p>There are various compound operators in Python like <code>a += 5</code> that adds to the variable and later assigns
+                    the same. It is equivalent to <code>a = a + 5</code>.</p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Example</th>
+                            <th>Equivalent to</th>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td>x = 5</td>
+                            <td>x = 5</td>
+                        </tr>
+                        <tr>
+                            <td>+=</td>
+                            <td>x += 5</td>
+                            <td>x = x + 5</td>
+                        </tr>
+                        <tr>
+                            <td>-=</td>
+                            <td>x -= 5</td>
+                            <td>x = x - 5</td>
+                        </tr>
+                        <tr>
+                            <td>*=</td>
+                            <td>x *= 5</td>
+                            <td>x = x * 5</td>
+                        </tr>
+                        <tr>
+                            <td>/=</td>
+                            <td>x /= 5</td>
+                            <td>x = x / 5</td>
+                        </tr>
+                        <tr>
+                            <td>%=</td>
+                            <td>x %= 5</td>
+                            <td>x = x % 5</td>
+                        </tr>
+                        <tr>
+                            <td>//=</td>
+                            <td>x //= 5</td>
+                            <td>x = x // 5</td>
+                        </tr>
+                        <tr>
+                            <td>**=</td>
+                            <td>x **= 5</td>
+                            <td>x = x ** 5</td>
+                        </tr>
+                        <tr>
+                            <td>&amp;=</td>
+                            <td>x &amp;= 5</td>
+                            <td>x = x &amp; 5</td>
+                        </tr>
+                        <tr>
+                            <td>|=</td>
+                            <td>x |= 5</td>
+                            <td>x = x | 5</td>
+                        </tr>
+                        <tr>
+                            <td>^=</td>
+                            <td>x ^= 5</td>
+                            <td>x = x ^ 5</td>
+                        </tr>
+                        <tr>
+                            <td>&gt;&gt;=</td>
+                            <td>x &gt;&gt;= 5</td>
+                            <td>x = x &gt;&gt; 5</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;&lt;=</td>
+                            <td>x &lt;&lt;= 5</td>
+                            <td>x = x &lt;&lt; 5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <sup><b><a href="https://www.programiz.com/python-programming/operators" target="_blank">programiz.com</a></b></sup>
+
+            </section>
+            <section id="Special_Operators" class="main">
+                <h1>Special Operators</h1>
+                <p>Python language offers some special types of operators like the identity operator or the membership operator. They are
+                described below with examples.</p>
+                <h2><b>Identity Operators</b></h2>
+                <p><code>is</code>>and are the identity operators in Python. They are used to check if two values (or variables) are located on the same
+                part of the memory. Two variables that are equal does not imply that they are identical.<code>is not</code></p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Meaning</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>is</td>
+                            <td>True if the operands are identical (refer to the same object)</td>
+                            <td>x is True</td>
+                        </tr>
+                        <tr>
+                            <td>is not</td>
+                            <td>True if the operands are not identical (do not refer to the same object)</td>
+                            <td>x is not True</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <sup><b><a href="https://www.programiz.com/python-programming/operators" target="_blank">programiz.com</a></b></sup>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <h3>Identity Operators in Python</h3>
+                    <pre><code>x1 = 5
+y1 = 5
+x2 = 'Hello'
+y2 = 'Hello'
+x3 = [1,2,3]
+y3 = [1,2,3]
+                    
+# Output: False
+print(x1 is not y1)
+                    
+# Output: True
+print(x2 is y2)
+                    
+# Output: False
+print(x3 is y3)</code></pre>
+                        <h3>Output</h3>
+                        <pre><code>False
+True
+False</code></pre>
+                <p>Here, we see that and are integers of the same values, so they are equal as well as identical. Same is the case with and
+                (strings).<code>x1</code><code>y1</code><code>x2</code><code>y2</code></p>
+                <p>But and are lists. They are equal but not identical. It is because the interpreter locates them separately in memory
+                although they are equal.<code>x3</code><code>y3</code></p>
+                </blockquote>
+                <h2><b>Membership Operators</b></h2>
+                <p><code>in</code>and are the membership operators in Python. They are used to test whether a value or variable is found in a sequence
+                (string, list, tuple, set and dictionary).<code>not in</code></p>
+                <table class="alt">
+                    <tbody>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Meaning</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>in</td>
+                            <td>True if value/variable is found in the sequence</td>
+                            <td>5 in x</td>
+                        </tr>
+                        <tr>
+                            <td>not in</td>
+                            <td>True if value/variable is not found in the sequence</td>
+                            <td>5 not in x</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2><b>Example</b></h2>
+                <blockquote>
+                    <h3>Membership Operators in Python</h3>
+                        <pre><code>x = 'Hello world'
+y = {1:'a',2:'b'}
+                        
+# Output: True
+print('H' in x)
+                        
+# Output: True
+print('hello' not in x)
+                        
+# Output: True
+print(1 in y)
+                        
+# Output: False
+print('a' in y)</code></pre>
+                <h3>Output</h3>
+                        <pre><code>True
+True
+True
+False</code></pre>
+                <p>Here, is in but is not present in (remember, Python is case sensitive). Similarly, is key and is the value in dictionary
+                . Hence, returns .<code>'H'</code><code>x</code><code>'hello'</code><code>x</code><code>1</code><code>'a'</code><code>y</code><code>'a' in y</code><code>False</code></p>
+                </blockquote>
+
 
             </section>
 
