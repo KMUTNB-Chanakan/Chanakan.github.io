@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>Lectour</title>
+    <title>Lectour 01</title>
     <link rel="icon" href="./insert_images/INE_logo.jpg" type="image/icon type" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -24,7 +24,7 @@
 
         <!-- Header -->
         <header id="header">
-            <div>
+                <h2>Lecture</h2>
                 <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="150px" height="150px"
                         viewBox="0 0 320 512">
                         <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -36,13 +36,8 @@
                         <path fill="#016ed5"
                             d="M160 64c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.9 1.6l-96 64C-.5 111.2-4.4 131 5.4 145.8s29.7 18.7 44.4 8.9L96 123.8V416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H160V64z" />
                     </svg></span><br />
-                <sup><b><a href="https://fontawesome.com/" target="_blank">fontawesome.com</a></b>
-                    </sub>
-            </div>
-            <h1>Computer and Programming<br>
-                Flowchart<br>
-                Data types <br />
-            </h1>
+                <sup><b><a href="https://fontawesome.com/" target="_blank">fontawesome.com</a></b></sup>
+           
             <p><sub>Make by <a href="https://www.instagram.com/likesxxzz2/" target="_blank">Chanakan Toursupap</a><br />
                     Information by <a href="https://scholar.google.co.th/citations?user=htY3F_IAAAAJ&hl=en"
                         target="_blank">Anirach
@@ -50,13 +45,171 @@
         </header>
         <nav id="nav">
             <ul>
-                <li><a href="#Programmer" class="active">Programmer</a></li>
+                <li><a href="#Print_Command" class="active">Print Command</a></li>
+                <li><a href="#Print_Numeric" class="active">Print Numeric</a></li>
                 <li><a href="index.html" class="active">Home Page</a></li>
             </ul>
         </nav>
 
         <!-- Main -->
         <div id="main">
+            <section id="Print_Command" class="main">
+                <h1>Print Command</h1>
+                <h2><b>Print Command</b></h2>
+                <ol>
+                    <li>Print String</li>
+                    <li>Print Numeric</li>
+                    <li>Print String + Numeric</li>
+                    <li>Print String + String</li>
+                    <li>Print Numeric + Numeric</li>
+                </ol>
+                <hr>
+                <h2><b>Print String</b></h2>
+                <blockquote>
+                    <ul class="alt">
+                        <li><code>print("Hello World")</code><br />
+                            <b>Hello World</b>
+                        </li>
+                        <li><code>print("Information and Network Engineering")</code><br />
+                            <b>Information and Network Engineering</b>
+                        </li>
+                        <li><code>print("Hello Anirach you will be success")</code><br />
+                            <b>Hello Anirach you will be success</b>
+                        </li>
+                        <li><code>print("I'm hungry")</code><br />
+                            <b>I'm hungry</b>
+                        </li>
+                        <li><code>print('He ask me "Who got the book?"')</code><br />
+                            <b>He ask me "Who got the book?"</b>
+                        </li>
+                        <li><code>print("I'm good and \"I will do my best\"")</code><br />
+                            <b>I'm good and "I will do my best"</b>
+                        </li>
+                        <li>
+                            <code>print('/\\')</code><br />
+                            <b>/\</b>
+                        </li>
+                        <li>
+                            <code>print('\ta\na\ta\ta\n\ta')</code><br />
+                            <b>&emsp;&emsp;&emsp;a&emsp;&emsp;&emsp;<br />
+                                a&emsp;&emsp;&#160;a&emsp;&emsp;&#160;a<br />
+                                &emsp;&emsp;&#160;&#160;a</b>
+                        </li>
+                        <li>
+                            <pre><code>print('''\ta
+                a\ta\ta
+                \ta'''</code></pre>
+                            <b>&emsp;&emsp;&emsp;a&emsp;&emsp;&emsp;<br />
+                                a&emsp;&emsp;&#160;a&emsp;&emsp;&#160;a<br />
+                                &emsp;&emsp;&#160;&#160;a</b>
+                        </li>
+                    </ul>
+                </blockquote>
+                <h2><b>Print Numeric</b></h2>
+                <blockquote>
+                    <ul class="alt">
+                        <li>
+                            <code>print('100.00')</code><br>
+                            <b>100.00</b>
+                        </li>
+                        <li>
+                            <code>print('%d' %100)</code><br>
+                            <b>100</b>
+                        </li>
+                        <li>
+                            <code>print('%d' %100.58)</code><br>
+                            <b>100</b>
+                        </li>
+                        <li>
+                            <code>print('%f' %-100.89)</code><br>
+                            <b>-100.890000</b>
+                        </li>
+                        <li>
+                            <code>print('%.2f' %100.89)</code><br>
+                            <b>100.89</b>
+                        </li>
+                        <li>
+                            <code>from math import pi</code><br>
+                            <code>print('%.2f' %pi)</code><br>
+                            <b>3.14</b>
+                        </li>
+                        <li>
+                            <code>from math import pi</code><br>
+                            <code>print('%.4f' %pi)</code><br>
+                            <b>3.1416</b>
+                        </li>
+                        <li>
+                            <code>from math import pi</code><br>
+                            <code>print('%.50f' %pi)</code><br>
+                            <b>3.14159265358979311599796346854418516159057617187500</b>
+                        </li>
+                    </ul>
+                </blockquote>
+                <h2><b>Print String + Numeric</b></h2>
+                <blockquote>
+                    <ul class="alt">
+                        <li>
+                            <code>print('My age is', 25,'I have', 3500.50,'Bth.')</code><br>
+                            <b>My age is 25 I have 3500.5 Bth.</b>
+                        </li>
+                        <li>
+                            <code>print('My age is %d I have %.2f Bth.' %(25,3500.50))</code><br>
+                            <b>My age is 25 I have 3500.50 Bth.</b>
+                        </li>
+                        <li>
+                            <code>print('My age is' + str(25)+' I have '+ str(3500.50)+' Bth.')</code><br>
+                            <b>My age is 25 I have 3500.5 Bth.</b>
+                        </li>
+                        <li>
+                            <code>print('5+4 =',5+4)</code><br>
+                            <b>5+4 = 9</b>
+                        </li>
+                        <li>
+                            <code>print('5+4 = %.2f' %(5+4))</code><br>
+                            <b>5+4 = 9.00</b>
+                        </li>
+                        <li>
+                            <code>print('5+4 = ' + str(5+4))</code><br>
+                            <b>5+4 = 9</b>
+                        </li>
+                    </ul>
+                </blockquote>
+                <h2><b>Print String + String</b></h2>
+                <blockquote>
+                    <ul class="alt">
+                        <li>
+                            <code>print("I'm Anirach","I'll keep practicing!")</code><br>
+                            <b>I'm Anirach I'll keep practicing!</b>
+                        </li>
+                        <li>
+                            <code>print("I'm Anirach" + "I'll keep practicing!"</code><br>
+                            <b>I'm Anirach I'll keep practicing!</b>
+                        </li>
+                    </ul>
+                </blockquote>
+                <h2><b>Print Numeric + Numeric</b></h2>
+                <blockquote>
+                    <ul class="alt">
+                        <li>
+                            <code>print(1, 1, 2, 3, 5, 8, 13, 21, 34, 55)</code><br>
+                            <b>1 1 2 3 5 8 13 21 34 55</b>
+                        </li>
+                        <li>
+                            <code>print('%d %d %d %d %d %d %d %d %d %d' %(1, 1, 2, 3, 5, 8, 13, 21, 34, 55))</code><br>
+                            <b>1 1 2 3 5 8 13 21 34 55</b>
+                        </li>
+                    </ul>
+                </blockquote>
+                <h2><b>Print() Exercises</b></h2>
+                <blockquote>
+                    <span class="image main"><img src="./insert_images/holypython.png" alt=""></span>
+                    <ul class="actions stacked">
+                        <li><a href="https://holypython.com/beginner-python-exercises/exercise-1-print/" class="button fit"
+                                target="_blank">holypython.com</a></li>
+                    </ul>
+                </blockquote>
+            </section>
+            
 
 
 
